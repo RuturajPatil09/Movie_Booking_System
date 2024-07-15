@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <link rel="stylesheet" type="text/css" href="css/user.css">
+</head>
+<body>
+    <div class="userbooking">
+        <h1>Movie Booking</h1>
+        <form id="bookingForm">
+            <label for="movie" style="color: white;"> Click on the Movie to select :</label>
+            <div class="screenText">
+                <label for="movie" style="padding-left: 80px;">Screen 1</label>
+                <label for="movie" style="padding-left: 180px;">Screen 2</label>
+                <label for="movie" style="padding-left: 210px;">Screen 3</label>
+            </div>
+            <div class="movie">
+                <img src="images/ironman.jpg" alt="Movie 1" data-movie="IronMan" data-screen="screen1"/>
+                <img src="images/tumbaad.jpg" alt="Movie 2" data-movie="Tumbaad" data-screen="screen2"/>
+                <img src="images/intestellar.jpg" alt="Movie 3" data-movie="Intestellar" data-screen="screen3"/>
+                
+            </div>
+
+            <label for="movie">Movie Name :</label>
+            <span id="movie" name="movie"> --- </span>
+            </select>
+
+            <label for="screen">Select Screen:</label>
+            <span id="screen" name="screen"> --- </span>
+
+            <label for="price">Price : </label>
+            <span id="price" name="price"> --- INR</span>
+
+            <label for="date">Select Booking Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Show Time:</label>
+            <select id="time" name="time" required>
+                <option value="time1"> 9:00 am</option>
+                <option value="time2"> 2:00 pm</option>
+                <option value="time3"> 10:15 pm</option>
+            </select>
+
+            <label for="seats">Select Seats:</label>
+            <div class="seats" id="gridBox">
+                <input type="checkbox" id="seat1" name="seats" value="1">
+                <input type="checkbox" id="seat2" name="seats" value="2">
+                <input type="checkbox" id="seat3" name="seats" value="3">
+                <input type="checkbox" id="seat4" name="seats" value="4">
+                <input type="checkbox" id="seat5" name="seats" value="5">
+                <input type="checkbox" id="seat6" name="seats" value="6">
+                <input type="checkbox" id="seat7" name="seats" value="7">
+                <input type="checkbox" id="seat8" name="seats" value="8">
+                <input type="checkbox" id="seat9" name="seats" value="9">
+                <input type="checkbox" id="seat10" name="seats" value="10">
+                <input type="checkbox" id="seat11" name="seats" value="11">
+                <input type="checkbox" id="seat12" name="seats" value="12">
+                <input type="checkbox" id="seat13" name="seats" value="13">
+                <input type="checkbox" id="seat14" name="seats" value="14">
+                <input type="checkbox" id="seat15" name="seats" value="15">
+                <input type="checkbox" id="seat16" name="seats" value="16">
+                <input type="checkbox" id="seat17" name="seats" value="17">
+                <input type="checkbox" id="seat18" name="seats" value="18">
+                <input type="checkbox" id="seat19" name="seats" value="19">
+                <input type="checkbox" id="seat20" name="seats" value="20">
+            </div>
+
+            <label for="finalData"> Final Booking Details</label>
+            <span id="finalData"></span>
+
+            <button type="submit" class="bookingbtn" onclick="bookTicket()">Book Now</button>
+        </form>
+    </div>
+
+    <script src="signup.js"></script>
+
+</body>
+</html>
